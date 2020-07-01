@@ -9,6 +9,7 @@ import { AdminComponent } from './admin/admin.component';
 import { SearchService } from './services/search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [SearchService],
+  providers: [SearchService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
